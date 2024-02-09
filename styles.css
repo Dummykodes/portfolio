@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+
+    padding: 15px 20px;
+    /* background-color: red; */
+}
+
+
+
+.header-ul{
+    display: flex;
+    list-style: none;
+    /* background-color: yellow; */
+    max-width: 650px;
+    width: 650px;
+    justify-content: space-between;
+}
+
+
+
+
+
+.user-intro , .what-i-do , .proficency{
+    width: 100%;
+    /* background-color:yellowgreen; */
+    padding: 30px;
+    display: flex;
+    /* gap: 200px; */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.user-intro-description , .what-i-do-description , .proficency-description{
+    max-width: 700px;
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: rgb(119, 162, 200); */
+}
+
+
+.user-intro-description h1{
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+.user-intro-logos , .what-i-do-logos{
+    display: flex;
+    gap: 15px;
+}
+.user-intro-logos a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.github{
+    background-color: #383235;
+}
+
+.linkedin {
+    background-color: #1A7BA7;
+}
+
+.youtube {
+    background-color: red;
+}
+
+
+
+
+
+.user-intro-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+
+.user-intro-buttons button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #500B87;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.what-i-do{
+    flex-wrap: wrap-reverse;
+}
+
+
+.what-i-do-logos{
+    gap: 20px;
+    align-self: center;
+}
+
+.what-i-do-description p i{
+    color: gold;
+    font-size: 20px;
+}
+
+.what-i-do-logos i{
+    font-size: 30px;
+}
+
+
+
+.skill{
+    width: 100%;
+}
+.skill-progress{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    /* border: .1em solid rgba(60, 51, 51, 0.231); */
+    background-color: #e3dbdb;
+    position: relative;
+}
+
+.progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+.progress.show-effect{
+    width: var(--width);
+    background-color: #AA9FFA;
+    border-radius: 10px;
+    animation-name: move;
+    animation-duration: .7s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move{
+    from{
+        width: 0%;
+    }
+    to{
+        width: var(--width);
+    }
+}
+
+
+
+#projects , .achivements{
+    max-width: 1600px;
+    /* height: 500px; */
+    padding: 15px;
+    /* background-color: yellow; */
+    margin: 50px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+
+}
+
+
+#projects section , .achivements section{
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+
+.project b{
+    text-decoration: underline;
+}
+
+.project {
+    max-width: 450px;
+    width: 450px;
+    height: 200px;
+    max-height: 200px;
+    /* min-height: 430px; */
+    background-color: rgba(248, 248, 244, 0.604);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    transition: .4s;
+}
+
+.project:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #1A7BA7;
+}
+
+
+
+
+
+
+
+
+
+.achivement{
+    max-width: 400px;
+    width: 400px;
+    height: 140px;
+    /* background-color: blue; */
+    border: #1A7BA7 solid 1px;
+    border-radius: 10px;
+    margin: 30px;
+    /* overflow: hidden; */
+}
+
+
+.achivement-image{
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+}
+
+
+.react-me-out{
+    max-width: 1600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.react-me-out :nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+footer{
+    text-align: center;
+    margin: 40px;
+}
+
+
+
+article{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: .4s;
+}
+
+.scroll-effect{
+    opacity: 1;
+    transform: translateY(0);
+    transition: .4s;
+}
+
+
+.user-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .user-intro-image-section img , .what-i-do-image-section img , .proficency-image-section img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width:320px){
+    .user-name h1{
+        font-size: 1.4em;
+    }
+}
+@media (max-width:400px){
+    .profile-image{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(7, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+@media (max-width: 690px){
+    .nav-links-header{
+        display: none;
+    }
+}
